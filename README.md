@@ -55,6 +55,8 @@
 * 점수 서버 제출 (선택)
 * 전체 랭킹 조회 가능
 
+![explaination](https://i.ifh.cc/PFjnlc.png)
+
 ---
 
 ## 🌐 Online Ranking
