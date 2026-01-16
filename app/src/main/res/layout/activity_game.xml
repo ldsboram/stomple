@@ -1,0 +1,73 @@
+<!-- activity_game.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Turn"
+        android:textSize="18sp"
+        android:layout_margin="10dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="427dp"
+        android:layout_weight="1">
+
+        <!-- GridLayout for board -->
+        <GridLayout
+            android:id="@+id/boardLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E6E6FA"
+            android:columnCount="7"
+            android:padding="5dp"
+            android:rowCount="7" /><!-- Light purple background -->
+    </FrameLayout>
+
+    <!-- Display assigned colors below the board -->
+    <LinearLayout
+        android:id="@+id/assignedColorsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/playerColorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Color: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/playerColorEmoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/computerColorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer's Color: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/computerColorEmoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>
