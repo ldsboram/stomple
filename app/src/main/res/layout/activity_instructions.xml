@@ -1,0 +1,94 @@
+<!-- activity_instructions.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/instructionsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Game Instructions"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Include images and text here -->
+        <TextView
+            android:id="@+id/instructionsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- 게임은 다양한 색상의 구슬로 채워진 7x7 보드에서 진행됩니다.
+\n- 하늘색, 보라색, 초록색, 노란색, 검은색, 흰색, 빨간색 구슬이 각각 7개씩 있습니다."
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- 게임 시작 시, 당신과 컴퓨터는 각각 빨간색을 제외한 고유한 색상을 할당받습니다.
+\n- 첫 번째 차례에, 당신은 반드시 가장자리의 구슬 하나를 밟아(제거하여)야 합니다.
+\n- 구슬을 밟은 후에, 인접한 위치에 같은 색상의 구슬이 있다면 계속해서 그 구슬들도 밟아야 합니다."
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/_2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- 이후 차례에는 가로/세로/대각선으로 인접한 구슬이나 자신에게 할당된 색상의 구슬을 밟을 수 있습니다.
+\n- 구슬을 밟은 후에, 인접한 위치에 같은 색상의 구슬이 있다면 계속해서 그 구슬들도 밟아야 합니다.
+\n- 플레이어가 더 이상 움직일 수 없을 때 게임이 종료됩니다."
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/_3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="- 점수 계산:
+\n ★ 기본 점수: 3점
+\n ★ 남은 빨간 구슬 하나당 +3점
+\n ★ 남은 다른 구슬 하나당 +1점
+\n ★ 패배할 경우, 위에서 합산된 점수가 -1로 곱해집니다." />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/_4" />
+
+        <Button
+            android:id="@+id/returnToMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Return to Main" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,69 @@
+<!-- activity_result.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt;게임 결과&gt;\n승리/패배"
+        android:textSize="24sp"
+        android:layout_marginBottom="15dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt;점수 계산&gt;\n..."
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:gravity="right"/>
+
+    <Button
+        android:id="@+id/mainMenuButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- 사용자 아이디 입력 EditText -->
+    <EditText
+        android:id="@+id/userIdEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="페이스북 로그인으로 이름을 입력하세요"
+        android:inputType="none"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:paddingTop="16dp"/>
+
+    <!-- Facebook 로그인 버튼 -->
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+
+    <!-- 점수 제출 버튼 -->
+    <Button
+        android:id="@+id/submitScoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="랭킹 서버에 등록" />
+
+    <!-- 랭킹 리스트를 표시할 ListView -->
+    <ListView
+        android:id="@+id/rankingListView"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:paddingTop="16dp"/>
+
+</LinearLayout>
